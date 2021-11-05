@@ -109,18 +109,18 @@ func TestReturnStatements(t *testing.T) {
 		}
 	}
 
-	test := []struct {
-		expectedIdentifier string
-	}{
-		{"x"},
-		{"y"},
-		{"foobar"},
-	}
+	// test := []struct {
+	// 	expectedIdentifier string
+	// }{
+	// 	{"x"},
+	// 	{"y"},
+	// 	{"foobar"},
+	// }
 
-	for i, test := range test {
-		stmt := program.Statements[i]
-		if !testLetStatement(t, stmt, test.expectedIdentifier) {
-			return
-		}
-	}
+	// for i, test := range test {
+	// 	stmt := program.Statements[i]
+	// 	if !testLetStatement(t, stmt, test.expectedIdentifier) {
+	// 		return
+	// 	}
+	// }
 }
