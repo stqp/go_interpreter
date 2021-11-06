@@ -108,21 +108,6 @@ func TestReturnStatements(t *testing.T) {
 			t.Errorf("returnStmt.TokenLiteral not 'return', got %q", returnStmt.TokenLiteral())
 		}
 	}
-
-	// test := []struct {
-	// 	expectedIdentifier string
-	// }{
-	// 	{"x"},
-	// 	{"y"},
-	// 	{"foobar"},
-	// }
-
-	// for i, test := range test {
-	// 	stmt := program.Statements[i]
-	// 	if !testLetStatement(t, stmt, test.expectedIdentifier) {
-	// 		return
-	// 	}
-	// }
 }
 
 func TestIdentifierExpression(t *testing.T) {
